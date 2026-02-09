@@ -1,4 +1,5 @@
-@define-color selected-text #afa6a6;
+/*@define-color selected-text #afa6a6;*/
+@define-color selected-text #a83234;
 @define-color text #d1cfcf;
 @define-color base #020202ac;
 @define-color border #d1cfcfac;
@@ -29,14 +30,15 @@ window .search {
 
 child:selected {
   border-radius: 10px;
-  background-color: alpha(@selected-box, 0.16);
+  /*background-color: alpha(@selected-box, 0.16);*/
+  color: selected-text;
   transition: all 0.9s ease-in;
   transition: background-color 0.22s ease-in;
 }
 
 child:selected .item-box {
   transition: all 0.09s ease-in;
-  margin-left: 10px;
+  /*margin-left: 10px;*/
 }
 
 child:selected .item-box * {
